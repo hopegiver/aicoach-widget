@@ -1,0 +1,36 @@
+{
+  "success": true,
+  "data": {
+    "items": [
+      {
+        "sessionId": "session_001",
+        "goal": "프레젠테이션 능력 향상",
+        "status": "completed",
+        "summary": "청중과의 눈맞춤, 목소리 톤 조절, 핵심 메시지 전달 방법에 대해 학습했습니다. 실전 연습을 통해 자신감이 향상되었습니다.",
+        "createdAt": "2024-01-15T10:30:00Z",
+        "completedAt": "2024-01-15T11:00:00Z"
+      },
+      {
+        "sessionId": "session_002",
+        "goal": "시간 관리 개선",
+        "status": "completed",
+        "summary": "우선순위 설정 방법과 포모도로 기법을 활용한 집중력 향상 전략을 수립했습니다. 일일 계획표 작성 습관을 형성했습니다.",
+        "createdAt": "2024-01-14T14:20:00Z",
+        "completedAt": "2024-01-14T14:45:00Z"
+      },
+      {
+        "sessionId": "session_003",
+        "goal": "리더십 개발",
+        "status": "active",
+        "summary": "팀원과의 효과적인 소통 방법과 피드백 스킬에 대해 논의 중입니다.",
+        "createdAt": "2024-01-16T09:00:00Z"
+      }
+    ],
+    "pagination": {
+      "page": 1,
+      "limit": 20,
+      "total": 3,
+      "totalPages": 1
+    }
+  }
+}

@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AI Coach Widget Demo</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      min-height: 100vh;
+      padding: 40px 20px;
+    }
+
+    .container {
+      max-width: 800px;
+      margin: 0 auto;
+    }
+
+    .hero {
+      text-align: center;
+      color: white;
+      margin-bottom: 60px;
+    }
+
+    .hero h1 {
+      font-size: 48px;
+      margin-bottom: 20px;
+    }
+
+    .hero p {
+      font-size: 20px;
+      opacity: 0.9;
+    }
+
+    .card {
+      background: white;
+      padding: 40px;
+      border-radius: 16px;
+      box-shadow: 0 20px 50px rgba(0, 0, 0, 0.2);
+    }
+
+    .card h2 {
+      margin-bottom: 20px;
+      color: #1f2937;
+    }
+
+    pre {
+      background: #1f2937;
+      color: #e5e7eb;
+      padding: 20px;
+      border-radius: 10px;
+      overflow-x: auto;
+    }
+
+    code {
+      color: #10b981;
+    }
+
+    .note {
+      background: #fef3c7;
+      border-left: 4px solid #f59e0b;
+      padding: 16px;
+      border-radius: 8px;
+      margin-top: 20px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="hero">
+      <h1>AI Coach Widget</h1>
+      <p>어떤 웹사이트에든 쉽게 통합 가능한 AI 코칭 챗봇</p>
+      <p style="font-size: 16px; margin-top: 20px;">
+        👉 오른쪽 하단의 챗봇 아이콘을 클릭해보세요!
+      </p>
+    </div>
+
+    <div class="card" style="margin-bottom: 30px;">
+      <h2>🎮 위젯 제어</h2>
+      <div style="display: flex; gap: 12px; justify-content: center;">
+        <button id="open-widget" style="padding: 12px 24px; background: linear-gradient(135deg, #4f46e5, #6366f1); color: white; border: none; border-radius: 8px; cursor: pointer; font-weight: 600; font-size: 14px;">
+          열기
+        </button>
+        <button id="close-widget" style="padding: 12px 24px; background: #f9fafb; color: #1f2937; border: 2px solid #e5e7eb; border-radius: 8px; cursor: pointer; font-weight: 600; font-size: 14px;">
+          닫기
+        </button>
+        <button id="toggle-widget" style="padding: 12px 24px; background: linear-gradient(135deg, #10b981, #059669); color: white; border: none; border-radius: 8px; cursor: pointer; font-weight: 600; font-size: 14px;">
+          토글
+        </button>
+      </div>
+    </div>
+
+    <div class="card">
+      <h2>🚀 사용 방법</h2>
+      <p>HTML 파일에 다음 코드만 추가하세요:</p>
+      <pre><code>&lt;script src="https://cdn.your-domain.com/aicoach.min.js"&gt;&lt;/script&gt;
+&lt;script&gt;
+  new AICoach({
+    apiUrl: 'https://aicoach-api.your-domain.workers.dev'
+  });
+&lt;/script&gt;</code></pre>
+
+      <div class="note">
+        <strong>💡 로컬 테스트</strong><br>
+        현재 페이지에서는 로컬 빌드 파일을 사용하고 있습니다.
+      </div>
+    </div>
+  </div>
+
+  <!-- Chart.js -->
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js"></script>
+
+  <!-- AI Coach Widget - Development Mode -->
+  <script type="module">
+    import { AICoach } from './src/aicoach-widget.js';
+
+    const coach = new AICoach({
+      apiUrl: 'localhost' // Mock 데이터 자동 사용
+    });
+
+    // 위젯 제어 버튼 이벤트
+    document.getElementById('open-widget').addEventListener('click', () => {
+      coach.show();
+    });
+
+    document.getElementById('close-widget').addEventListener('click', () => {
+      coach.hide();
+    });
+
+    document.getElementById('toggle-widget').addEventListener('click', () => {
+      coach.toggle();
+    });
+
+    console.log('🎭 개발 모드 실행 중...');
+    console.log('📁 Mock 데이터: ./mock-api/*.json');
+    console.log('💡 라이브 서버로 실행하면 바로 테스트 가능!');
+  </script>
+</body>
+</html>

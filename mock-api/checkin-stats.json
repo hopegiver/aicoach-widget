@@ -1,0 +1,10 @@
+{
+  "success": true,
+  "data": {
+    "weeklyCompletion": 75,
+    "currentStreak": 7,
+    "totalCompletedActions": 21,
+    "lastCheckin": "2025-01-14",
+    "weeklyTrend": "up"
+  }
+}

@@ -1,0 +1,187 @@
+{
+  "success": true,
+  "data": {
+    "questions": [
+      {
+        "id": 1,
+        "text": "새로운 프로젝트를 시작할 때 어떤 방식을 선호하시나요?",
+        "options": [
+          { "id": "A", "text": "전체적인 계획을 먼저 세우고 체계적으로 진행한다", "score": { "planner": 3, "doer": 0 } },
+          { "id": "B", "text": "대략적인 방향만 정하고 바로 시작한다", "score": { "planner": 0, "doer": 3 } },
+          { "id": "C", "text": "상황에 따라 유연하게 조절한다", "score": { "planner": 1, "doer": 1 } }
+        ]
+      },
+      {
+        "id": 2,
+        "text": "팀 회의에서 당신의 역할은?",
+        "options": [
+          { "id": "A", "text": "적극적으로 의견을 제시하고 토론을 주도한다", "score": { "leader": 3, "supporter": 0 } },
+          { "id": "B", "text": "다른 사람의 의견을 경청하고 조율한다", "score": { "leader": 0, "supporter": 3 } },
+          { "id": "C", "text": "필요할 때만 의견을 낸다", "score": { "leader": 1, "supporter": 1 } }
+        ]
+      },
+      {
+        "id": 3,
+        "text": "배울 때 어떤 방식이 가장 효과적인가요?",
+        "options": [
+          { "id": "A", "text": "직접 해보면서 경험으로 배운다", "score": { "practical": 3, "theoretical": 0 } },
+          { "id": "B", "text": "이론과 원리를 먼저 이해한 후 실행한다", "score": { "practical": 0, "theoretical": 3 } },
+          { "id": "C", "text": "둘 다 중요하다고 생각한다", "score": { "practical": 1, "theoretical": 1 } }
+        ]
+      },
+      {
+        "id": 4,
+        "text": "스트레스를 받을 때 어떻게 대처하나요?",
+        "options": [
+          { "id": "A", "text": "혼자 조용히 생각하며 해결책을 찾는다", "score": { "introvert": 3, "extrovert": 0 } },
+          { "id": "B", "text": "주변 사람들과 대화하며 해소한다", "score": { "introvert": 0, "extrovert": 3 } },
+          { "id": "C", "text": "운동이나 취미 활동으로 전환한다", "score": { "introvert": 1, "extrovert": 1 } }
+        ]
+      },
+      {
+        "id": 5,
+        "text": "피드백을 받을 때 어떤 방식을 선호하나요?",
+        "options": [
+          { "id": "A", "text": "직접적이고 명확한 피드백", "score": { "direct": 3, "indirect": 0 } },
+          { "id": "B", "text": "부드럽고 배려 있는 피드백", "score": { "direct": 0, "indirect": 3 } },
+          { "id": "C", "text": "상황에 따라 다르다", "score": { "direct": 1, "indirect": 1 } }
+        ]
+      },
+      {
+        "id": 6,
+        "text": "목표를 설정할 때 어떤 스타일인가요?",
+        "options": [
+          { "id": "A", "text": "명확하고 측정 가능한 목표를 세운다", "score": { "specific": 3, "flexible": 0 } },
+          { "id": "B", "text": "큰 방향만 정하고 유연하게 조정한다", "score": { "specific": 0, "flexible": 3 } },
+          { "id": "C", "text": "중간 정도의 구체성을 선호한다", "score": { "specific": 1, "flexible": 1 } }
+        ]
+      },
+      {
+        "id": 7,
+        "text": "문제가 발생했을 때 어떻게 접근하나요?",
+        "options": [
+          { "id": "A", "text": "원인을 분석하고 체계적으로 해결한다", "score": { "analytical": 3, "intuitive": 0 } },
+          { "id": "B", "text": "직관적으로 해결책을 찾아본다", "score": { "analytical": 0, "intuitive": 3 } },
+          { "id": "C", "text": "두 가지를 혼합해서 사용한다", "score": { "analytical": 1, "intuitive": 1 } }
+        ]
+      },
+      {
+        "id": 8,
+        "text": "업무 우선순위를 어떻게 정하나요?",
+        "options": [
+          { "id": "A", "text": "중요도와 긴급도를 따져 체계적으로 정한다", "score": { "organized": 3, "spontaneous": 0 } },
+          { "id": "B", "text": "그때그때 상황에 맞춰 조정한다", "score": { "organized": 0, "spontaneous": 3 } },
+          { "id": "C", "text": "기본 틀은 있지만 유연하게 대응한다", "score": { "organized": 1, "spontaneous": 1 } }
+        ]
+      },
+      {
+        "id": 9,
+        "text": "새로운 아이디어를 떠올릴 때",
+        "options": [
+          { "id": "A", "text": "혼자 깊이 생각하는 시간을 갖는다", "score": { "reflective": 3, "interactive": 0 } },
+          { "id": "B", "text": "다른 사람들과 브레인스토밍한다", "score": { "reflective": 0, "interactive": 3 } },
+          { "id": "C", "text": "두 가지 모두 활용한다", "score": { "reflective": 1, "interactive": 1 } }
+        ]
+      },
+      {
+        "id": 10,
+        "text": "변화에 대한 태도는?",
+        "options": [
+          { "id": "A", "text": "신중하게 고려한 후 받아들인다", "score": { "cautious": 3, "adventurous": 0 } },
+          { "id": "B", "text": "새로운 변화를 즐기고 빠르게 적응한다", "score": { "cautious": 0, "adventurous": 3 } },
+          { "id": "C", "text": "변화의 종류에 따라 다르다", "score": { "cautious": 1, "adventurous": 1 } }
+        ]
+      },
+      {
+        "id": 11,
+        "text": "정보를 처리할 때",
+        "options": [
+          { "id": "A", "text": "세부사항에 집중하여 꼼꼼히 파악한다", "score": { "detailed": 3, "big_picture": 0 } },
+          { "id": "B", "text": "전체적인 흐름과 맥락을 먼저 이해한다", "score": { "detailed": 0, "big_picture": 3 } },
+          { "id": "C", "text": "상황에 따라 조절한다", "score": { "detailed": 1, "big_picture": 1 } }
+        ]
+      },
+      {
+        "id": 12,
+        "text": "의사결정을 할 때 중요하게 생각하는 것은?",
+        "options": [
+          { "id": "A", "text": "논리와 객관적인 근거", "score": { "logical": 3, "emotional": 0 } },
+          { "id": "B", "text": "사람들의 감정과 관계", "score": { "logical": 0, "emotional": 3 } },
+          { "id": "C", "text": "두 가지를 균형있게 고려한다", "score": { "logical": 1, "emotional": 1 } }
+        ]
+      },
+      {
+        "id": 13,
+        "text": "에너지를 충전하는 방법은?",
+        "options": [
+          { "id": "A", "text": "혼자만의 시간을 가진다", "score": { "solitary": 3, "social": 0 } },
+          { "id": "B", "text": "사람들과 어울린다", "score": { "solitary": 0, "social": 3 } },
+          { "id": "C", "text": "컨디션에 따라 다르다", "score": { "solitary": 1, "social": 1 } }
+        ]
+      },
+      {
+        "id": 14,
+        "text": "프로젝트 마감이 다가올 때",
+        "options": [
+          { "id": "A", "text": "미리 준비해서 여유있게 완료한다", "score": { "early": 3, "deadline": 0 } },
+          { "id": "B", "text": "마감 직전에 집중력이 높아진다", "score": { "early": 0, "deadline": 3 } },
+          { "id": "C", "text": "적절한 시기에 진행한다", "score": { "early": 1, "deadline": 1 } }
+        ]
+      },
+      {
+        "id": 15,
+        "text": "성공을 어떻게 정의하나요?",
+        "options": [
+          { "id": "A", "text": "구체적인 목표 달성과 성과", "score": { "achievement": 3, "growth": 0 } },
+          { "id": "B", "text": "개인적인 성장과 배움", "score": { "achievement": 0, "growth": 3 } },
+          { "id": "C", "text": "두 가지 모두 중요하다", "score": { "achievement": 1, "growth": 1 } }
+        ]
+      },
+      {
+        "id": 16,
+        "text": "실수를 했을 때 반응은?",
+        "options": [
+          { "id": "A", "text": "원인을 분석하고 개선 방안을 찾는다", "score": { "problem_solver": 3, "learner": 0 } },
+          { "id": "B", "text": "배움의 기회로 받아들인다", "score": { "problem_solver": 0, "learner": 3 } },
+          { "id": "C", "text": "상황에 따라 다르게 반응한다", "score": { "problem_solver": 1, "learner": 1 } }
+        ]
+      },
+      {
+        "id": 17,
+        "text": "멀티태스킹에 대한 생각은?",
+        "options": [
+          { "id": "A", "text": "한 번에 한 가지에 집중하는 게 좋다", "score": { "focused": 3, "multitasker": 0 } },
+          { "id": "B", "text": "여러 일을 동시에 하는 게 효율적이다", "score": { "focused": 0, "multitasker": 3 } },
+          { "id": "C", "text": "업무 특성에 따라 다르다", "score": { "focused": 1, "multitasker": 1 } }
+        ]
+      },
+      {
+        "id": 18,
+        "text": "동기부여를 받는 요인은?",
+        "options": [
+          { "id": "A", "text": "내적 만족과 성취감", "score": { "intrinsic": 3, "extrinsic": 0 } },
+          { "id": "B", "text": "외부의 인정과 보상", "score": { "intrinsic": 0, "extrinsic": 3 } },
+          { "id": "C", "text": "둘 다 중요하다", "score": { "intrinsic": 1, "extrinsic": 1 } }
+        ]
+      },
+      {
+        "id": 19,
+        "text": "갈등 상황에서의 대처 방식은?",
+        "options": [
+          { "id": "A", "text": "직접적으로 문제를 해결하려 한다", "score": { "confronting": 3, "avoiding": 0 } },
+          { "id": "B", "text": "시간을 두고 자연스럽게 해결되길 기다린다", "score": { "confronting": 0, "avoiding": 3 } },
+          { "id": "C", "text": "중재자 역할을 한다", "score": { "confronting": 1, "avoiding": 1 } }
+        ]
+      },
+      {
+        "id": 20,
+        "text": "미래 계획에 대한 태도는?",
+        "options": [
+          { "id": "A", "text": "구체적인 장기 계획을 세운다", "score": { "long_term": 3, "short_term": 0 } },
+          { "id": "B", "text": "단기 목표에 집중한다", "score": { "long_term": 0, "short_term": 3 } },
+          { "id": "C", "text": "장단기를 균형있게 본다", "score": { "long_term": 1, "short_term": 1 } }
+        ]
+      }
+    ]
+  }
+}

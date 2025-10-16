@@ -1,0 +1,36 @@
+{
+  "success": true,
+  "data": [
+    {
+      "goalId": "goal_001",
+      "goalName": "프레젠테이션 능력 향상",
+      "targetSessions": 10,
+      "currentSession": 3,
+      "level": "intermediate",
+      "description": "대중 앞에서 자신감 있게 발표하고 싶습니다",
+      "status": "active",
+      "createdAt": "2024-01-10T10:00:00Z"
+    },
+    {
+      "goalId": "goal_002",
+      "goalName": "시간 관리 개선",
+      "targetSessions": 8,
+      "currentSession": 5,
+      "level": "beginner",
+      "description": "업무 시간을 효율적으로 관리하고 싶습니다",
+      "status": "active",
+      "createdAt": "2024-01-05T14:30:00Z"
+    },
+    {
+      "goalId": "goal_003",
+      "goalName": "리더십 개발",
+      "targetSessions": 12,
+      "currentSession": 12,
+      "level": "advanced",
+      "description": "팀을 효과적으로 이끌고 싶습니다",
+      "status": "completed",
+      "createdAt": "2023-12-01T09:00:00Z",
+      "completedAt": "2024-01-15T18:00:00Z"
+    }
+  ]
+}

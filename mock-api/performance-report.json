@@ -1,0 +1,56 @@
+{
+  "success": true,
+  "data": {
+    "week": {
+      "totalSessions": 12,
+      "achievementRate": 78,
+      "currentStreak": 7,
+      "completedActions": 21,
+      "peakTime": "오전 10시",
+      "topCategory": "커뮤니케이션",
+      "avgCompletion": 78,
+      "activityData": {
+        "labels": ["월", "화", "수", "목", "금", "토", "일"],
+        "values": [3, 4, 2, 5, 3, 2, 2]
+      },
+      "categoryData": {
+        "labels": ["커뮤니케이션", "시간관리", "리더십", "스트레스 관리", "기타"],
+        "values": [8, 5, 4, 3, 1]
+      }
+    },
+    "month": {
+      "totalSessions": 48,
+      "achievementRate": 82,
+      "currentStreak": 7,
+      "completedActions": 89,
+      "peakTime": "오전 10시",
+      "topCategory": "커뮤니케이션",
+      "avgCompletion": 82,
+      "activityData": {
+        "labels": ["1주차", "2주차", "3주차", "4주차"],
+        "values": [18, 22, 25, 24]
+      },
+      "categoryData": {
+        "labels": ["커뮤니케이션", "시간관리", "리더십", "스트레스 관리", "기타"],
+        "values": [32, 21, 18, 12, 6]
+      }
+    },
+    "all": {
+      "totalSessions": 156,
+      "achievementRate": 85,
+      "currentStreak": 7,
+      "completedActions": 298,
+      "peakTime": "오전 10시",
+      "topCategory": "커뮤니케이션",
+      "avgCompletion": 85,
+      "activityData": {
+        "labels": ["1월", "2월", "3월", "4월", "5월", "6월"],
+        "values": [18, 24, 28, 32, 30, 24]
+      },
+      "categoryData": {
+        "labels": ["커뮤니케이션", "시간관리", "리더십", "스트레스 관리", "기타"],
+        "values": [112, 78, 54, 35, 19]
+      }
+    }
+  }
+}

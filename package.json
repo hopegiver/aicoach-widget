@@ -1,0 +1,31 @@
+{
+  "name": "aicoach-widget",
+  "version": "1.0.0",
+  "description": "AI Coach Chatbot Widget for Website Integration",
+  "main": "dist/aicoach-widget.min.js",
+  "module": "dist/aicoach-widget.esm.js",
+  "files": [
+    "dist/"
+  ],
+  "scripts": {
+    "build": "node esbuild.config.js",
+    "dev": "node esbuild.config.js dev",
+    "clean": "rimraf dist"
+  },
+  "keywords": [
+    "ai",
+    "coach",
+    "coaching",
+    "chatbot",
+    "widget"
+  ],
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "esbuild": "^0.25.10",
+    "rimraf": "^5.0.0"
+  },
+  "dependencies": {
+    "chart.js": "^4.4.1"
+  }
+}

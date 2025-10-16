@@ -1,0 +1,11 @@
+{
+  "success": true,
+  "data": {
+    "date": "2025-01-16",
+    "action": "5분 동안 깊게 호흡하며 오늘의 목표 3가지를 떠올려 보세요",
+    "category": "mindfulness",
+    "estimatedMinutes": 5,
+    "streak": 7,
+    "completed": false
+  }
+}
