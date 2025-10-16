@@ -31,6 +31,7 @@ export class Chatbot {
     this.widget = widget;
     this.chatContainer = widget.querySelector('.aicoach-chat');
     this.messagesContainer = widget.querySelector('.aicoach-messages');
+    this.messagesScrollContainer = widget.querySelector('.aicoach-messages-container');
     this.toggleButton = widget.querySelector('.aicoach-toggle');
 
     this.applySizeSettings();
@@ -240,8 +241,8 @@ export class Chatbot {
 
     titleText.textContent = titles[viewName] || 'AI 코치';
 
-    // 홈 화면이나 채팅 화면이 아닐 때만 뒤로가기 버튼 표시
-    if (viewName === 'home' || viewName === 'chat') {
+    // 홈 화면이 아닐 때만 뒤로가기 버튼 표시
+    if (viewName === 'home') {
       backBtn.style.display = 'none';
       titleIcon.style.display = 'block';
     } else {
@@ -306,11 +307,20 @@ export class Chatbot {
     if (!this.messagesContainer) return;
 
     const messageElement = document.createElement('div');
-    messageElement.className = `aicoach-message ${message.sender}`;
-
-    let content = message.content.replace(/\n/g, '<br>');
-    messageElement.innerHTML = content;
+    messageElement.className = `aicoach-message aicoach-message-${message.sender}`;
     messageElement.dataset.messageId = message.id;
+
+    const avatar = document.createElement('div');
+    avatar.className = 'aicoach-avatar';
+    avatar.textContent = message.sender === 'ai' ? '🤖' : '👤';
+
+    const bubble = document.createElement('div');
+    bubble.className = 'aicoach-bubble';
+    const content = message.content.replace(/\n/g, '<br>');
+    bubble.innerHTML = content;
+
+    messageElement.appendChild(avatar);
+    messageElement.appendChild(bubble);
 
     this.messagesContainer.appendChild(messageElement);
   }
@@ -339,9 +349,9 @@ export class Chatbot {
   }
 
   scrollToBottom() {
-    if (!this.messagesContainer) return;
+    if (!this.messagesScrollContainer) return;
     setTimeout(() => {
-      this.messagesContainer.scrollTop = this.messagesContainer.scrollHeight;
+      this.messagesScrollContainer.scrollTop = this.messagesScrollContainer.scrollHeight;
     }, 100);
   }
 
