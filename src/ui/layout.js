@@ -96,18 +96,19 @@ export default {
       background: white;
       border-radius: 16px;
       box-shadow: 0 20px 50px rgba(0, 0, 0, 0.15);
-      display: none;
+      display: flex;
       flex-direction: column;
       overflow: hidden;
-      transform: translateY(10px);
+      transform: translateY(20px) scale(0.95);
       opacity: 0;
+      pointer-events: none;
       transition: transform 0.3s ease, opacity 0.3s ease;
     }
 
     .aicoach-chat.open {
-      display: flex;
-      transform: translateY(0);
+      transform: translateY(0) scale(1);
       opacity: 1;
+      pointer-events: auto;
     }
 
     .aicoach-header {

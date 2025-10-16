@@ -5,7 +5,11 @@
       "Bash(mv:*)",
       "Bash(node mock-server.js)",
       "Bash(git init:*)",
-      "Bash(git add:*)"
+      "Bash(git add:*)",
+      "Bash(git commit -m \"$(cat <<''EOF''\nfeat: AI Coach 위젯 초기 구현 완료\n\n주요 기능:\n- 토글 버튼으로 위젯 열기/닫기\n- 성향 진단 (20개 질문, 결과 분석)\n- 목표 기반 코칭 시스템 (목표 목록, 생성, 주제 선택)\n- AI 추천 (목표 추천, 주제 추천)\n- 오늘의 활동 (연속 달성 스트릭)\n- 활동 진행 상황 (통계 카드, 기분 체크)\n- 성과 리포트 (KPI, 차트, 인사이트)\n- 코칭 이력 조회\n- Chart.js 통합 (활동 추이, 카테고리 분포)\n\n기술 스택:\n- ES6 모듈 시스템\n- 이벤트 기반 아키텍처\n- Mock API (로컬 테스트용)\n- 모듈화된 UI 구조 (screen-based components)\n- Flexbox/Grid 레이아웃\n\nUI 개선:\n- 반응형 디자인\n- 부드러운 애니메이션\n- 일관된 버튼 스타일\n- 통계 카드 한 줄 배치\n- 기분 아이콘 한 줄 배치\n\n🤖 Generated with [Claude Code](https://claude.com/claude-code)\n\nCo-Authored-By: Claude <noreply@anthropic.com>\nEOF\n)\")",
+      "Bash(git remote add:*)",
+      "Bash(git push:*)",
+      "Bash(git commit -m \"$(cat <<''EOF''\nfix: 위젯 열기/닫기 애니메이션 개선\n\n- display: none/flex 대신 opacity와 pointer-events로 변경\n- 부드러운 scale 애니메이션 추가\n- 위젯이 제대로 열리지 않던 문제 수정\n\n🤖 Generated with [Claude Code](https://claude.com/claude-code)\n\nCo-Authored-By: Claude <noreply@anthropic.com>\nEOF\n)\")"
     ],
     "deny": [],
     "ask": []
