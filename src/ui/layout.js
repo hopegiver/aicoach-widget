@@ -383,5 +383,34 @@ export default {
       border-radius: 10px;
       font-weight: 700;
     }
+
+    /* 모바일 전체 화면 모드 */
+    @media (max-width: 768px) {
+      .aicoach-widget {
+        bottom: 0;
+        right: 0;
+        left: 0;
+        top: 0;
+      }
+
+      .aicoach-chat {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        width: 100%;
+        height: 100%;
+        border-radius: 0;
+        max-width: 100%;
+        max-height: 100%;
+      }
+
+      .aicoach-toggle {
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+      }
+    }
   `
 };
